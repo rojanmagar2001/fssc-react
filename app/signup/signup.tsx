@@ -1,4 +1,18 @@
-export default function SignupPage() {
+import { z } from "zod";
+
+const signupSchema = z.object({
+  name: z
+    .string()
+    .min(2, "Name must be at least 2 characters long")
+    .max(20, "Name must be at most 20 characters long"),
+  email: z.string().email("Invalid email address"),
+  password: z
+    .string()
+    .min(8, "Password must be at least 8 characters long")
+    .max(20, "Password must be at most 20 characters long"),
+});
+
+export function Signup() {
   return (
     <main className="flex min-h-screen items-center justify-center p-6">
       <div className="w-full max-w-sm">
