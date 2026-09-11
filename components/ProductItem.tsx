@@ -1,6 +1,16 @@
 import React from "react";
 
-const ProductItem = () => {
+interface ProductItemProps {
+  title: string;
+  price: number;
+  thumbnail: string;
+}
+
+const ProductItem: React.FC<ProductItemProps> = ({
+  title,
+  price,
+  thumbnail,
+}) => {
   return (
     <li className="group flex flex-col transition-all">
       <a
@@ -9,8 +19,8 @@ const ProductItem = () => {
       >
         <div className="aspect-[3/4] bg-slate-100 w-full overflow-hidden">
           <img
-            src="https://readymadeui.com/images/fashion-img-1.webp"
-            alt="Crimson Luxe Gown"
+            src={thumbnail}
+            alt={title}
             className="w-full h-full object-cover object-top hover:scale-110 transition-all duration-700"
           />
         </div>
@@ -64,10 +74,10 @@ const ProductItem = () => {
 
         <div className="z-20 relative">
           <h3 className="text-sm font-semibold text-slate-900 truncate sm:text-base dark:text-slate-50">
-            Crimson Luxe Gown – Elegant full-length dress
+            {title}
           </h3>
           <p className="text-sm text-slate-600 font-medium mt-2 dark:text-slate-400">
-            $100.00
+            ${price}
           </p>
         </div>
       </div>

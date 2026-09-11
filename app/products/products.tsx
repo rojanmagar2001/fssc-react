@@ -1,4 +1,5 @@
 import React from "react";
+import ProductItem from "../../components/ProductItem";
 
 const Products = () => {
   return (
@@ -572,6 +573,12 @@ const Products = () => {
               </div>
             </div>
           </li>
+
+          <ProductItem
+            title="Crimson Luxe Gown – Elegant full-length dress"
+            price={100.0}
+            thumbnail="https://readymadeui.com/images/fashion-img-1.webp"
+          />
         </ul>
       </div>
     </section>
