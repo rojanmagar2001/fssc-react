@@ -1,6 +1,46 @@
 import React from "react";
 import ProductItem from "../../components/ProductItem";
 
+const productsData = [
+  {
+    title: "Crimson Luxe Gown – Elegant full-length dress",
+    price: 100.0,
+    thumbnail: "https://readymadeui.com/images/fashion-img-1.webp",
+  },
+  {
+    title: "Emerald Draped Dress",
+    price: 120.0,
+    thumbnail: "https://readymadeui.com/images/fashion-img-2.webp",
+  },
+  {
+    title: "Sapphire Silk Blouse",
+    price: 80.0,
+    thumbnail: "https://readymadeui.com/images/fashion-img-3.webp",
+  },
+  {
+    title: "Golden Evening Gown",
+    price: 150.0,
+    thumbnail: "https://readymadeui.com/images/fashion-img-4.webp",
+  },
+  {
+    title: "Ruby Red Cocktail Dress",
+    price: 90.0,
+    thumbnail: "https://readymadeui.com/images/fashion-img-5.webp",
+  },
+
+  {
+    title: "Emerald Draped Dress",
+    price: 120.0,
+    thumbnail: "https://readymadeui.com/images/fashion-img-2.webp",
+  },
+
+  {
+    title: "Sapphire Silk Blouse",
+    price: 80.0,
+    thumbnail: "https://readymadeui.com/images/fashion-img-3.webp",
+  },
+];
+
 const Products = () => {
   return (
     <section className="mt-6 px-4 md:px-8" aria-label="products">
